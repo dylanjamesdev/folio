@@ -10,8 +10,11 @@ const NyanCatCursor: React.FC = () => {
     if (!nyanCat) return;
 
     const moveNyanCat = (e: MouseEvent) => {
-      nyanCat.style.left = e.pageX - nyanCat.width / 2 + "px";
-      nyanCat.style.top = e.pageY - nyanCat.height / 2 + "px";
+      const x = e.clientX;
+      const y = e.clientY;
+
+      nyanCat.style.left = x - nyanCat.width / 2 + "px";
+      nyanCat.style.top = y - nyanCat.height / 2 + "px";
     };
 
     document.addEventListener("mousemove", moveNyanCat);
