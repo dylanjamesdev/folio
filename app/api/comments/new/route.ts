@@ -1,11 +1,5 @@
+import "@/db/connect";
 import dataModel from "@/db/model";
-import initConnection from "@/db/init";
-
-export const revalidate = 0;
-
-(async () => {
-  await initConnection();
-})();
 
 export async function POST(req: Request) {
   let { content, time, date } = await req.json();
