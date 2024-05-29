@@ -151,14 +151,16 @@ const Projects: React.FC = () => {
 
   return (
     <div className="mt-10 flex justify-center">
-      <div className="bg-[#060507] w-full max-w-[70%] rounded-3xl overflow-hidden px-4 md:px-8 py-8 border border-zinc-800">
-        <div className="flex items-center text-3xl font-semibold leading-tight mb-4 text-white">
+      <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-4 md:px-8 py-8 border border-zinc-800">
+        <div className="flex items-center text-2xl md:text-3xl font-semibold leading-tight mb-4 text-white">
           <span>Comments</span>
           <FaComment className="text-indigo-500 ml-2" />
         </div>
-        <p className="text-lg md:text-xl text-gray-200 mb-8 text-left">
+
+        <p className="text-base md:text-lg text-gray-200 mb-8 text-left">
           Here you can leave a comment and view other comments.
         </p>
+
         <input
           type="text"
           value={searchQuery}
@@ -166,6 +168,7 @@ const Projects: React.FC = () => {
           className="w-full mb-4 px-4 py-2 rounded-lg border border-zinc-800 bg-[#101013] text-gray-400 focus:outline-none"
           placeholder="Search comments..."
         />
+
         <div className="mb-8">
           {filteredComments
             .slice(
@@ -175,7 +178,7 @@ const Projects: React.FC = () => {
             .map((comment: Comment) => (
               <div
                 key={comment._id}
-                className="bg-[#101013] border border-zinc-800 rounded-xl p-6 mb-4"
+                className="bg-[#101013] border border-zinc-800 rounded-xl p-4 md:p-6 mb-4"
               >
                 <p className="text-gray-400 text-center mt-2">
                   {comment.date} at {comment.time}
@@ -184,11 +187,12 @@ const Projects: React.FC = () => {
               </div>
             ))}
         </div>
+
         <div className="flex justify-center mb-4">
           <button
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
-            className="mr-2 px-4 py-2 rounded-lg shadow-md  text-gray-200 bg-[#3a3a3b] hover:bg-[#2e2e2e] hover:text-white"
+            className="mr-2 px-4 py-2 rounded-lg shadow-md text-gray-200 bg-[#3a3a3b] hover:bg-[#2e2e2e] hover:text-white"
           >
             Previous
           </button>
@@ -201,6 +205,7 @@ const Projects: React.FC = () => {
             Next
           </button>
         </div>
+
         <form onSubmit={handleSubmit} className="mb-4">
           <textarea
             value={newComment}
