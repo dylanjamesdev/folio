@@ -12,7 +12,7 @@ interface Comment {
   time: string;
 }
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const [comments, setComments] = useState<Comment[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [newComment, setNewComment] = useState<string>("");

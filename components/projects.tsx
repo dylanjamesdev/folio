@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/data/projects";
+import { projects } from "@static";
 import { FaCodeCommit } from "react-icons/fa6";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <div className="mt-10 flex justify-center">
       <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800">

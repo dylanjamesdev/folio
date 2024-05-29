@@ -5,7 +5,9 @@ async function removeBadStuff() {
   initConnection();
 
   try {
-    let comments = await dataModel.find({ content: { $regex: /\bnigga\b/i } });
+    const comments = await dataModel.find({
+      content: { $regex: /\bnigga\b/i },
+    });
 
     await dataModel.deleteMany({ content: { $regex: /\bnigga\b/i } });
 
@@ -13,7 +15,7 @@ async function removeBadStuff() {
       `${comments.length} comments with "nigger" removed successfully.`
     );
   } catch (error) {
-    console.error("Error removing comments with 'pie':", error);
+    console.error("Error removing comments with 'nigger':", error);
   }
 }
 

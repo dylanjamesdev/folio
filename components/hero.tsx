@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <div className="mt-8 md:mt-12 flex justify-center">
       <div
         className="w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-12 md:py-16 border border-zinc-800 flex flex-col md:flex-row items-center relative"
         style={{
-          backgroundImage: "url('/img/bg6.jpg')",
+          backgroundImage: "url('/img/hero.jpg')",
           backgroundSize: "contain",
           backgroundPosition: "center",
         }}

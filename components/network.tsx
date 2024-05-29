@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaNetworkWired } from "react-icons/fa";
 
-const Network = () => {
+const Network: React.FC = () => {
   return (
     <div className="mt-10 flex justify-center">
       <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800 flex flex-col md:flex-row items-center relative">

@@ -1,10 +1,10 @@
-import "@/db/connect";
-import dataModel from "@/db/model";
+import "@db/connect";
+import dataModel from "@db/model";
 
 export const revalidate = 0;
 
 export async function POST(req: Request) {
-  let { content, time, date } = await req.json();
+  const { content, time, date } = await req.json();
 
   if (!content || !time || !date) {
     return new Response("Missing fields", {
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     content: content,
   })
     .save()
-    .catch((e: any) => console.error(e));
+    .catch((e: Error) => console.error(e));
 
   return new Response(succ, {
     status: 200,
