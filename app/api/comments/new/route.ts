@@ -1,5 +1,5 @@
-import "@/db";
-import dataModel from "@db/model";
+import "@/lib/db";
+import dataModel from "@/lib/db/model";
 
 export const revalidate = 0;
 

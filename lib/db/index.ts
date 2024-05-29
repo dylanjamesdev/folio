@@ -1,4 +1,4 @@
-import initConnection from "./init";
+import initConnection from "@db/init";
 
 (async () => {
   await initConnection();

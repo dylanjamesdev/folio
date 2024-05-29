@@ -1,5 +1,5 @@
-import initConnection from "./init";
-import dataModel from "./model";
+import initConnection from "@db/init";
+import dataModel from "@db/model";
 
 async function removeBadStuff() {
   await initConnection();
