@@ -151,7 +151,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="mt-10 flex justify-center">
-      <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800">
+      <div className="bg-[#060507] w-full max-w-[70%] rounded-3xl overflow-hidden px-4 md:px-8 py-8 border border-zinc-800">
         <div className="flex items-center text-3xl font-semibold leading-tight mb-4 text-white">
           <span>Comments</span>
           <FaComment className="text-indigo-500 ml-2" />
@@ -177,10 +177,10 @@ const Projects: React.FC = () => {
                 key={comment._id}
                 className="bg-[#101013] border border-zinc-800 rounded-xl p-6 mb-4"
               >
-                <p className="text-gray-300 text-center">{comment.content}</p>
                 <p className="text-gray-400 text-center mt-2">
                   {comment.date} at {comment.time}
                 </p>
+                <p className="text-gray-300 text-center">{comment.content}</p>
               </div>
             ))}
         </div>

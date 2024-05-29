@@ -21,11 +21,11 @@ const Hero: React.FC = () => {
             height={150}
           />
 
-          <div className="text-white text-left">
+          <div className="text-gray-300 text-left">
             <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-4">
               Dylan James
             </h1>
-            <p className="text-lg font-semibold text-gray-200 mb-8">
+            <p className="text-lg font-semibold text-gray-200 mb-8 bg-black w-max  py-1 px-1">
               Network Engineer and Software Developer
             </p>
             <div className="flex flex-col md:flex-row">
