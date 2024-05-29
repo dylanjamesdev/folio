@@ -1,4 +1,4 @@
-import "@db/connect";
+import "@/db";
 import dataModel from "@db/model";
 
 export const revalidate = 0;
