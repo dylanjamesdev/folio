@@ -6,15 +6,13 @@ const Footer: React.FC = () => {
     <footer className="bg-[#060507]  container mx-auto w-full md:max-w-[70%] rounded-3xl text-white mt-8 p-8 border border-zinc-800">
       <div className="flex justify-between items-start">
         <div className="transition-transform duration-500 ease-in-out transform hover:scale-105">
-          <p className="py-6">
-            Made with ❤️‍🔥 by{" "}
-            <Link
-              href="https://github.com/team-tritan/portfolio-2024"
-              className="text-indigo-400 underline"
-            >
-              Dylan James
-            </Link>
-          </p>
+          <p className="py-3">Made with ❤️‍🔥 by Dylan James</p>
+          <Link
+            href="https://github.com/team-tritan/portfolio-2024"
+            className="text-indigo-400 underline"
+          >
+            src
+          </Link>
         </div>
         <div className="flex space-x-8">
           <div>
