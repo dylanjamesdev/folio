@@ -103,23 +103,30 @@ const Projects = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (newComment.trim() !== "") {
+      const newCommentData: Comment = {
+        _id: Math.random().toString(), // Generate a temporary ID (replace with actual ID if available from API)
+        content: newComment,
+        date: new Date().toDateString(),
+        time: new Date().toLocaleTimeString(),
+      };
+
       const opts: RequestInit = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          content: newComment,
-          date: new Date(),
-          time: new Date().toLocaleTimeString(),
-        }),
+        body: JSON.stringify(newCommentData),
       };
 
       fetch("/api/comments/new", opts)
-        .then((response) => response.json())
-
+        .then((response) => {
+          if (response.ok) {
+            setComments([...comments, newCommentData]);
+            setNewComment(""); 
+            alert("Comment posted!");
+          } else {
+            throw new Error("Failed to post comment");
+          }
+        })
         .catch((error) => console.error("Error posting comment:", error));
-
-      setNewComment("");
-      return alert("Comment posted!");
     }
   };
 
