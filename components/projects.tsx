@@ -6,17 +6,17 @@ import { FaCodeCommit } from "react-icons/fa6";
 const Projects: React.FC = () => {
   return (
     <div className="mt-10 flex justify-center">
-      <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800">
-        <div className="flex items-center text-3xl font-semibold leading-tight mb-4 text-white">
+      <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-4 md:px-8 py-8 border border-zinc-800">
+        <div className="flex items-center text-2xl md:text-3xl font-semibold leading-tight mb-4 text-white">
           <span>Projects</span>
           <FaCodeCommit className="text-indigo-500 ml-2" />
         </div>
-        <p className="text-lg md:text-xl text-gray-200 mb-8 text-left">
+        <p className="text-base md:text-lg text-gray-200 mb-8 text-left">
           Here are some of the projects I&apos;ve worked on. Click the button to
           view the project.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
