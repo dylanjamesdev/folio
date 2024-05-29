@@ -2,7 +2,7 @@ import initConnection from "./init";
 import dataModel from "./model";
 
 async function removeBadStuff() {
-  initConnection();
+  await initConnection();
 
   try {
     const comments = await dataModel.find({
