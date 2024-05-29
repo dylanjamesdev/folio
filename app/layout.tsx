@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Geologica } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "@/public/styles.css";
 
-const font = Geologica({ subsets: ["latin"] });
+const font = Kanit({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Dylan James | Portfolio",
