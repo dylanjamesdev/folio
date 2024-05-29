@@ -1,4 +1,4 @@
-import Nyaa from "@/components/nyaa";
+import Nyaa from "@components/nyaa";
 import About from "@components/about";
 import Comments from "@components/comments";
 import Footer from "@components/footer";

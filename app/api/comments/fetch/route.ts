@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import "@/db";
+import "@db";
 import dataModel from "@db/model";
 
 export const revalidate = 0;
