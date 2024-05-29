@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="relative bg-[#17161b] min-h-screen">
+    <div className="relative bg-[#060607] min-h-screen">
       <Hero />
       <About />
       <Stack />

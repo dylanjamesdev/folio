@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Geologica } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer";
 
-const urbanist = Urbanist({ subsets: ["latin"] });
+const font = Geologica({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dylan James | Portfolio",
@@ -17,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

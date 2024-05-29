@@ -25,7 +25,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-4">
               Dylan James
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8">
+            <p className="text-lg font-semibold text-gray-200 mb-8">
               Network Engineer and Software Developer
             </p>
             <div className="flex flex-col md:flex-row">
@@ -33,13 +33,13 @@ const Hero = () => {
                 href="https://tritan.gg/network"
                 className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-indigo-800"
               >
-                My Network
+                Network
               </Link>
               <Link
                 href="https://github.com/team-tritan"
                 className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-indigo-800 ml-4 mt-4 md:mt-0"
               >
-                Projects
+                Github
               </Link>
             </div>
           </div>

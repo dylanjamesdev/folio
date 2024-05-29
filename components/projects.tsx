@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { FaCodeCommit } from "react-icons/fa6";
 
 const Projects = () => {
   return (
     <div className="mt-10 flex justify-center">
-      <div className="w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800">
-        <div className="text-3xl font-semibold leading-tight mb-4 text-white text-left">
-          Projects
+      <div className="bg-[#060507] w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800">
+        <div className="flex items-center text-3xl font-semibold leading-tight mb-4 text-white">
+          <span>Projects</span>
+          <FaCodeCommit className="text-indigo-500 ml-2" />
         </div>
         <p className="text-lg md:text-xl text-gray-200 mb-8 text-left">
           Here are some of the projects I&apos;ve worked on. Click the button to
@@ -16,7 +18,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-[#201f25] rounded-xl p-6">
+            <div key={index} className="bg-[#101013] rounded-xl p-6">
               <Image
                 src={project.image}
                 alt={project.title}
