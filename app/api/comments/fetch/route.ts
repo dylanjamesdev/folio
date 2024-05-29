@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import "@db";
 import dataModel from "@db/model";
 
