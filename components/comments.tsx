@@ -3,6 +3,8 @@
 import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import { FaComment } from "react-icons/fa";
 
+export const revalidate = 0;
+
 interface Comment {
   _id: string;
   content: string;
@@ -24,7 +26,7 @@ const Projects = () => {
       .then((response) => response.json())
       .then((data: Comment[]) => setComments(data))
       .catch((error) => console.error("Error fetching comments:", error));
-  }, []);
+  }, [comments]);
 
   const filteredComments = comments.filter((comment) =>
     comment.content.toLowerCase().includes(searchQuery.toLowerCase())
@@ -104,7 +106,7 @@ const Projects = () => {
     e.preventDefault();
     if (newComment.trim() !== "") {
       const newCommentData: Comment = {
-        _id: Math.random().toString(), 
+        _id: Math.random().toString(),
         content: newComment,
         date: new Date().toDateString(),
         time: new Date().toLocaleTimeString(),
@@ -120,7 +122,7 @@ const Projects = () => {
         .then((response) => {
           if (response.ok) {
             setComments([...comments, newCommentData]);
-            setNewComment(""); 
+            setNewComment("");
             alert("Comment posted!");
           } else {
             throw new Error("Failed to post comment");

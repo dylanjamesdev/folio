@@ -4,8 +4,8 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import Stack from "@/components/stack";
-import Image from "next/image";
-import Link from "next/link";
+
+export const revalidate = 0;
 
 const Home = () => {
   return (
