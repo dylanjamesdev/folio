@@ -6,10 +6,10 @@ async function removeBadStuff() {
 
   try {
     const comments = await dataModel.find({
-      content: { $regex: /\bnigga\b/i },
+      content: { $regex: /\bnigger\b/i },
     });
 
-    await dataModel.deleteMany({ content: { $regex: /\bnigga\b/i } });
+    await dataModel.deleteMany({ content: { $regex: /\bnigger\b/i } });
 
     console.log(
       `${comments.length} comments with "nigger" removed successfully.`
