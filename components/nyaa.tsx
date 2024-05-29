@@ -26,7 +26,7 @@ const NyanCatCursor: React.FC = () => {
       ref={nyanCatRef}
       height={80}
       width={80}
-      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette3.wikia.nocookie.net%2Ffantendo%2Fimages%2F9%2F9f%2FNyan_cat_animated.gif%2Frevision%2Flatest%3Fcb%3D20121125193107&f=1&nofb=1&ipt=e9d33430fa7034c2a9292998eccc20914a649770b795c296884670bd7068c8bf&ipo=images"
+      src="/img/nyaa.gif"
       alt="Nyan Cat"
       style={{ position: "fixed", pointerEvents: "none", zIndex: 9999 }}
     />
