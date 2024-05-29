@@ -3,9 +3,11 @@ import initConnection from "@/db/init";
 
 export const revalidate = 0;
 
-export async function POST(req: Request) {
+(async () => {
   await initConnection();
+})();
 
+export async function POST(req: Request) {
   let { content, time, date } = await req.json();
 
   if (!content || !time || !date) {
