@@ -104,7 +104,7 @@ const Projects = () => {
     e.preventDefault();
     if (newComment.trim() !== "") {
       const newCommentData: Comment = {
-        _id: Math.random().toString(), // Generate a temporary ID (replace with actual ID if available from API)
+        _id: Math.random().toString(), 
         content: newComment,
         date: new Date().toDateString(),
         time: new Date().toLocaleTimeString(),
