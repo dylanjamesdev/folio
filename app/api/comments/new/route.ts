@@ -1,6 +1,8 @@
 import "@/db/connect";
 import dataModel from "@/db/model";
 
+export const revalidate = 0;
+
 export async function POST(req: Request) {
   let { content, time, date } = await req.json();
 
