@@ -137,6 +137,9 @@ const Projects = () => {
         <div className="text-3xl font-semibold leading-tight mb-4 text-white text-left">
           Leave a comment!
         </div>
+        <p className="text-lg md:text-xl text-gray-200 mb-8 text-left">
+          Here you can leave a comment and view other comments.
+        </p>
         <input
           type="text"
           value={searchQuery}
