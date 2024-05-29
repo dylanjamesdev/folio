@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #17161b;
+}
+
+.card-container {
+  flex-grow: 1;
+  min-width: 0; /* Ensure content can shrink */
+}

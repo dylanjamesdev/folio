@@ -1,0 +1,29 @@
+import Link from "next/link";
+
+const About = () => {
+  return (
+    <div className="mt-10 flex justify-center">
+      <div className="w-full md:max-w-[70%] rounded-3xl overflow-hidden px-36 py-8 border border-zinc-800 flex flex-col md:flex-row items-center relative">
+        <div className="md:w-1/2 text-left md:text-left">
+          <div className="text-3xl font-semibold leading-tight mb-4 text-white">
+            About Me
+          </div>
+          <p className="text-lg md:text-xl text-gray-200 mb-8">
+            I&apos;m a Network Engineer and Software Developer. I have a passion
+            for networking and software development. I have experience with
+            various technologies and programming languages. I&apos;m always
+            looking to learn and improve my skills.
+          </p>
+          <Link
+            href="https://tritan.gg/about"
+            className="bg-indigo-600 hover:bg-indigo-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-indigo-800"
+          >
+            Learn More
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
