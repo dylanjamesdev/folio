@@ -22,11 +22,19 @@ const Projects = () => {
   const maxPaginationButtons: number = 5;
 
   useEffect(() => {
-    fetch("/api/comments/fetch")
-      .then((response) => response.json())
-      .then((data: Comment[]) => setComments(data))
-      .catch((error) => console.error("Error fetching comments:", error));
-  }, [comments]);
+    const fetchComments = () => {
+      fetch("/api/comments/fetch")
+        .then((response) => response.json())
+        .then((data: Comment[]) => setComments(data))
+        .catch((error) => console.error("Error fetching comments:", error));
+    };
+
+    fetchComments();
+
+    const intervalId = setInterval(fetchComments, 15000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   const filteredComments = comments.filter((comment) =>
     comment.content.toLowerCase().includes(searchQuery.toLowerCase())
