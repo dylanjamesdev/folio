@@ -2,6 +2,7 @@ import About from "@/components/about";
 import Comments from "@/components/comments";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
+import Network from "@/components/network";
 import Projects from "@/components/projects";
 import Stack from "@/components/stack";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <About />
       <Stack />
+      <Network />
       <Projects />
       <Comments />
       <Footer />
