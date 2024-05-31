@@ -27,8 +27,8 @@ const NyanCatCursor: React.FC = () => {
   return (
     <img
       ref={nyanCatRef}
-      height={80}
-      width={80}
+      height={60}
+      width={60}
       src="/img/nyaa.gif"
       alt="Nyan Cat"
       style={{ position: "fixed", pointerEvents: "none", zIndex: 9999 }}
