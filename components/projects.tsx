@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#101013] rounded-xl overflow-hidden flex flex-col"
+              className="bg-[#101013] rounded-xl overflow-hidden flex flex-col items-center"
             >
               <div className="mb-4">
                 <Image
