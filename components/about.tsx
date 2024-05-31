@@ -10,11 +10,20 @@ const About: React.FC = () => {
           <FaInfoCircle className="text-indigo-500 ml-2" />
         </div>
 
-        <p className="text-base md:text-lg text-gray-200 mb-8">
+        <p className="text-base md:text-lg text-gray-200 mb-2">
           Simply put, I&apos;m a hobbyist Network Engineer and Software
-          Developer. I have a passion for networking and software development. I
-          have experience with various technologies and programming languages.
-          I&apos;m always looking to learn and improve my skills.
+          Developer. I have a passion for networking and software development.
+        </p>
+
+        <p className="text-base md:text-lg text-gray-200 mb-8">
+          I'm also the owner of{" "}
+          <Link className="text-indigo-500" href="https://tritan.gg">
+            Tritan Internet
+          </Link>
+          , a tier 2 enterprise level ISP and hosting provider, that provides
+          connectivity to hard to reach areas. We are also a software
+          development company that specializes in web development and network
+          automation, with an emphasis on open source projects.
         </p>
 
         <div className="text-center md:text-left">
