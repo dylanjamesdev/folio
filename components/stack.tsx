@@ -14,7 +14,7 @@ const Stack: React.FC = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#101013] rounded-xl p-4 md:p-6">
+          <div className="bg-[#101013] border border-zinc-800 rounded-xl p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold text-white mb-2 text-center">
               Frontend
             </h2>
@@ -24,7 +24,7 @@ const Stack: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-[#101013] rounded-xl p-4 md:p-6">
+          <div className="bg-[#101013] border border-zinc-800 rounded-xl p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold text-white mb-2 text-center">
               Backend
             </h2>
@@ -33,7 +33,7 @@ const Stack: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-[#101013] rounded-xl p-4 md:p-6">
+          <div className="bg-[#101013] border border-zinc-800 rounded-xl p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold text-white mb-2 text-center">
               Misc
             </h2>
