@@ -26,20 +26,20 @@ const Hero: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-4">
               Dylan James
             </h1>
-            <p className="text-lg font-semibold text-gray-200 mb-8 bg-black w-max  py-1 px-1">
+            <p className="text-lg font-semibold text-gray-200 mb-8 w-max py-1 px-1">
               Network Engineer and Software Developer
             </p>
             <div className="flex flex-col md:flex-row justify-center md:justify-start">
               <Link
                 href="https://tritan.gg/network"
-                className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-indigo-800 mb-4 md:mb-0 md:mr-4"
+                className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-zinc-900 bg-zinc-900 hover:bg-zinc-700 mb-4 md:mb-0 md:mr-4"
                 style={{ minWidth: "150px", textAlign: "center" }}
               >
                 Network
               </Link>
               <Link
                 href="https://github.com/team-tritan"
-                className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-indigo-800"
+                className="text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-zinc-900 bg-zinc-900  hover:bg-zinc-700"
                 style={{ minWidth: "150px", textAlign: "center" }}
               >
                 Github
