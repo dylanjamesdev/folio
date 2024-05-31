@@ -37,7 +37,6 @@ const Projects: React.FC = () => {
               <p className="text-gray-300 text-center">{project.description}</p>
               <div className="flex justify-center mt-auto">
                 {" "}
-                {/* Centered button */}
                 <Link
                   href={project.link}
                   className="mt-5 mb-5 text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-zinc-800 bg-zinc-800 hover:bg-zinc-900"

@@ -16,7 +16,7 @@ const About: React.FC = () => {
         </p>
 
         <p className="text-base md:text-lg text-gray-200 mb-8">
-          I'm also the owner of{" "}
+          I&apos;m also the owner of{" "}
           <Link className="text-indigo-500" href="https://tritan.gg">
             Tritan Internet
           </Link>
