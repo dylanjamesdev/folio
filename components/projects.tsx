@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#101013] rounded-xl p-4 md:p-6 flex flex-col items-center"
+              className="bg-[#101013] rounded-xl overflow-hidden flex flex-col"
             >
               <div className="mb-4">
                 <Image
@@ -35,10 +35,12 @@ const Projects: React.FC = () => {
                 {project.title}
               </h2>
               <p className="text-gray-300 text-center">{project.description}</p>
-              <div className="mt-4">
+              <div className="flex justify-center mt-auto">
+                {" "}
+                {/* Centered button */}
                 <Link
                   href={project.link}
-                  className="bg-[#3a3a3b] hover:bg-[#2e2e2e] text-white font-semibold py-2 px-4 rounded-lg shadow-md inline-block"
+                  className="mt-5 mb-5 text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-zinc-800 bg-zinc-800 hover:bg-zinc-900"
                 >
                   View Project
                 </Link>

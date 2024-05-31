@@ -215,9 +215,9 @@ const Projects: React.FC = () => {
           ></textarea>
           <button
             type="submit"
-            className="mt-4 bg-[#3a3a3b] hover:bg-[#2e2e2e] text-white font-semibold py-2 px-4 rounded-lg shadow-md inline-block"
+            className="mt-4 text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block border border-zinc-800 bg-zinc-800 hover:bg-zinc-900"
           >
-            Add Comment
+            Post Comment
           </button>
         </form>
       </div>
