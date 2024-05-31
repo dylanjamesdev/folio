@@ -63,3 +63,18 @@ export const projects: iProject[] = [
     link: "https://github.com/Team-Tritan/Email-Verification-API",
   },
 ];
+
+interface IFooterLinks {
+  [category: string]: { label: string; href: string }[];
+}
+
+export const FooterLinks: IFooterLinks = {
+  Me: [
+    { label: "Contact", href: "https://tritan.gg/contact" },
+    { label: "Github", href: "https://github.com/dylanjamesdev" },
+  ],
+  Tritan: [
+    { label: "Website", href: "https://tritan.gg" },
+    { label: "Discord", href: "https://tritan.gg/discord" },
+  ],
+};

@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import { FooterLinks } from "@static";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#060507]  container mx-auto w-full md:max-w-[70%] rounded-3xl text-white mt-8 p-8 border border-zinc-800">
+    <footer className="bg-[#060507] container mx-auto w-full md:max-w-[70%] rounded-3xl text-white mt-8 p-8 border border-zinc-800">
       <div className="flex justify-between items-start">
         <div className="transition-transform duration-500 ease-in-out transform hover:scale-105">
           <p className="py-3">Made with ❤️‍🔥 by Dylan James</p>
@@ -15,48 +16,25 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className="flex space-x-8">
-          <div>
-            <p className="text-gray-300 font-semibold underline">Me</p>
-            <ul className="text-gray-300">
-              <li>
-                <Link
-                  href="https://tritan.gg/contact"
-                  className="hover:text-indigo-400 transition-colors duration-300"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://github.com/dylanjamesdev"
-                  className="hover:text-indigo-400 transition-colors duration-300"
-                >
-                  Github
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-gray-300 font-semibold underline">Tritan</p>
-            <ul className="text-gray-300">
-              <li>
-                <Link
-                  href="https://tritan.gg"
-                  className="hover:text-indigo-400 transition-colors duration-300"
-                >
-                  Website
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://tritan.gg/discord"
-                  className="hover:text-indigo-400 transition-colors duration-300"
-                >
-                  Discord
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {Object.entries(FooterLinks).map(([category, links]) => (
+            <div key={category}>
+              <p className="text-gray-300 font-semibold underline">
+                {category}
+              </p>
+              <ul className="text-gray-300">
+                {links.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-indigo-400 transition-colors duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </footer>
