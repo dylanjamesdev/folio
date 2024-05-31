@@ -6,10 +6,11 @@ import Hero from "@components/hero";
 import Network from "@components/network";
 import Projects from "@components/projects";
 import Stack from "@components/stack";
+import { type NextPage } from "next";
 
 export const revalidate = 0;
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <div className="relative bg-[#060607] min-h-screen">
       <Nyaa />
